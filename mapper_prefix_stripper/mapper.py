@@ -29,7 +29,7 @@ class PrefixStripperMapper(InlineMapper):
         th.Property(
             "strip_prefixes",
             th.ArrayType(th.StringType()),
-            title="The Prefix to replace",
+            title="The prefixes to replace",
             description="The field prefixes that needs removal",
         ),
     ).to_dict()

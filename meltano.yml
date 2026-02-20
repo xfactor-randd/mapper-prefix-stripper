@@ -28,14 +28,15 @@ plugins:
 
     # TODO: Declare settings and their types here:
     settings:
-    - name: example_config
-      kind: string
-      label: Example Config
-      description: An example configuration setting
+    - name: strip_prefixes
+      kind: array
+      label: Strip Prefixes
+      description: A list of prefixes to remove
 
     # TODO: Declare mapping instances here:
     # https://docs.meltano.com/guide/mappers/#example-1
     mappings:
-    - name: example
+    - name: prefix
       config:
-        example_config: foo
+        strip_prefixes:
+        - properties_
