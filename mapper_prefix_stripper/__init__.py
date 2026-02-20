@@ -1,0 +1,1 @@
+"""PrefixStripper Mapper."""
